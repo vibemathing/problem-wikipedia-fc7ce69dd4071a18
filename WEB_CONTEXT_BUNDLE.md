@@ -215,72 +215,82 @@ This file is generated from repository truth and bounded for the web channel. It
     "acceptance": {
       "policy": "solution-admission-v1"
     },
-    "aliases": [],
+    "aliases": [
+      "wikipedia-fc7ce69dd4071a18"
+    ],
     "allowed_axioms": [
       "none"
     ],
     "assumptions": [
-      "This record must never be treated as an active research problem."
+      "The raw source status “open” is metadata, not a mathematical Result.",
+      "No mathematical research may start before identity deduplication, complete-statement review, and canonical admission.",
+      "If the source excerpt is partial or ambiguous, the repository must remain draft."
     ],
     "constraints": {
       "allowed_adapters": [
-        "template-validation-v1"
+        "source-fidelity-review-v1"
       ],
       "allowed_methods": [
         "discovery"
       ],
       "max_attempts": 1,
       "runtime": {
-        "max_output_bytes": 65536,
+        "max_output_bytes": 262144,
         "max_retries": 1,
-        "max_transitions": 10,
-        "timeout_seconds": 60
+        "max_transitions": 20,
+        "timeout_seconds": 300
       }
     },
-    "created_at": "2026-09-06T00:00:00Z",
+    "created_at": "2026-09-08T11:09:27Z",
     "definitions": [
       {
-        "definition": "A non-admitted draft record used only to validate the physical public repository template.",
-        "term": "template placeholder"
+        "definition": "The versioned public catalog record cited below; it is not yet an admitted unique mathematical Problem.",
+        "term": "source observation"
       }
     ],
     "domain": {
-      "description": "Template-only placeholder domain; not a mathematical research question.",
+      "description": "Draft source-observation intake. Exact domain remains pending deduplication and statement-faithfulness review.",
       "objects": [
-        "template-placeholder"
+        "objects and notation explicitly named in the cited source statement"
       ]
     },
     "lifecycle": "draft",
     "msc": [
       "00A00"
     ],
-    "problem_id": "problem:template-placeholder",
+    "problem_id": "problem:wikipedia-fc7ce69dd4071a18",
     "quantifiers": [
       {
-        "domain": "a reviewed public canonical ProblemContract supplied by the repository builder",
+        "domain": "an exact, source-faithful and deduplicated ProblemContract for this source observation",
         "kind": "find",
         "variables": [
-          "replacement_problem"
+          "reviewed_problem_contract"
         ]
       }
     ],
     "schema_version": "1.0.0",
     "sources": [
       {
-        "retrieved_at": "2026-09-06T00:00:00Z",
-        "source": "Vibe Mathing public Web Harness",
-        "source_record_id": "public-template-placeholder-v1",
-        "url": "https://github.com/vibemathing/vibe-mathing-problem-public-template"
+        "retrieved_at": "2026-09-02T00:06:33Z",
+        "source": "wikipedia — Wikipedia contributors, \"List of unsolved problems in mathematics\"",
+        "source_record_id": "wikipedia-fc7ce69dd4071a18",
+        "url": "https://en.wikipedia.org/wiki/Section_conjecture"
+      },
+      {
+        "retrieved_at": "2026-09-02T00:06:33Z",
+        "source": "license: Creative Commons Attribution-Share Alike 4.0",
+        "source_record_id": null,
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
       }
     ],
     "statement": {
       "language": "en",
-      "text": "This is a non-research placeholder. Replace it with exactly one reviewed public ProblemContract before creating a public problem repository.",
+      "text": "Section conjecture on splittings of group homomorphisms from fundamental groups of complete smooth curves over finitely-generated fields $k$ to the Galois group of $k$ .",
       "version": 1
     },
-    "title": "Vibe Mathing public problem repository template placeholder",
-    "updated_at": "2026-09-06T00:00:00Z"
+    "title": "Section conjecture",
+    "updated_at": "2026-09-08T11:09:27Z"
   },
-  "problem_contract_sha256": "e64cd03254e03dd661eade23243c3c21793fc2d8bffa2d33c172cf8ed2e7f940"
+  "problem_contract_sha256": "900678dfe8c14d5a54ec69448baef4c76d2f570573bd0aff42fad342f0151311"
 }
 ```
